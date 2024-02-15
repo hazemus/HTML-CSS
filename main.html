@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Using HTML & CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="page-left-side">
+        <h1>
+          Hazem <br />
+          Khemili
+        </h1>
+        <h2>- Technical Consultat at <u><a href="https://www.hpe.com/emea_europe/en/home.html" >HPE</a></u></h2>
+        <h2>- Engineering Student at <u><a href="https://tek-up.de/">TEK-UP</a></u></h2>
+        <p style="font-size: large;">
+          Hey! I am Hazem Khemili And this is my Portfolio Website  
+        </p>
+        
+        <button onclick="openABME()">About Me</button>
+        <button onclick="openCv()" >View CV</button>
+        <br />
+        <br />
+        <h2>Work</h2>
+        <button onclick="openGit()">Github</button>
+        <button onclick="openExp()">experience</button> <br />
+        <br />
+        <h2>Social Media</h2>
+        <button onclick="openLinkedIn()">LinkedIn</button>
+        <button onclick="openFacebook()">Facebook</button> <br />
+        <br />
+        <button class="btn" onclick="openCon()" >Contact Now</button>
+        <br/>
+        <br/>
+      </div>
+      <div class="page-right-side">
+        <img src="hzm.JPG" alt="img" />
+      </div>
+      <script>
+        function openLinkedIn(){
+          window.open("https://www.linkedin.com/in/hazem-khemili-79520a167/");
+        }
+        function openFacebook(){
+          window.open("https://www.facebook.com/hazem.khemili.ftw");
+        }
+        function openABME(){
+          window.location.href = "aboutme.html"
+        }
+        function openExp(){
+          window.location.href = "experience.html"
+        }
+        function openGit(){
+          window.open("https://github.com/hazemus");
+        }
+        function openCv(){
+          window.location.href = "file:///C:/Users/khemilha/Desktop/html%20css/Hazem-Khemili.pdf"
+        }
+        function openCon(){
+          window.location.href = "contact.html"
+        }
+
+      </script>
+    </div>
+  </body>
+</html>
